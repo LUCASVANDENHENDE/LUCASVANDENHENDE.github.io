@@ -26,25 +26,25 @@
             color: #3498db;
         }
         img {
-            border: 7px solid #e74c3c;
+            border: 5px solid #e74c3c;
             border-radius: 10px;
             max-width: 100%;
             height: auto;
         }
         heart {
             color: #e74c3c;
-            font-size: 4em;
-            animation: bounce 0,5s infinite; /* Aangepaste animatieduur */
+            font-size: 2em;
+            animation: bounce 1.5s infinite; /* Aangepaste animatieduur */
         }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1) translateX(0);
             }
             40% {
-                transform: translateY(-30px) scale(0.8); /* Verhoogde stuiterhoogte en verkleining */
+                transform: translateY(-30px) scale(0.8) translateX(20px); /* Verhoogde stuiterhoogte, verkleining en horizontale beweging */
             }
             60% {
-                transform: translateY(-15px) scale(3); /* Verhoogde stuiterhoogte en verkleining */
+                transform: translateY(-15px) scale(0.8) translateX(-20px); /* Verhoogde stuiterhoogte, verkleining en horizontale beweging */
             }
         }
     </style>
@@ -67,7 +67,7 @@
 
     <p>Cool eh</p>
 
-    <p>En hier is een hart dat stuitert, verkleint en verstoot <heart>&#10084;</heart> voor jou!</p>
+    <p>En hier is een hart dat stuitert, verkleint en beweegt <heart>&#10084;</heart> voor jou!</p>
 
 </body>
 </html>
