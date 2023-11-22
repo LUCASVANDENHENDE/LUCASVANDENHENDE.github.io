@@ -10,6 +10,11 @@
             margin: 20px;
             background-color: #2c3e50;
             color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         h1 {
             color: #e74c3c;
@@ -29,6 +34,18 @@
         heart {
             color: #e74c3c;
             font-size: 2em;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
         }
     </style>
 </head>
@@ -50,9 +67,10 @@
 
     <p>Voel je vrij om deze code aan te passen en mee te experimenteren!</p>
 
-    <p>En hier is een vergroot <heart>&#10084;</heart> voor jou!</p>
+    <p>En hier is een stuiterend en gecentreerd <heart>&#10084;</heart> voor jou!</p>
 
 </body>
 </html>
+
 
 
